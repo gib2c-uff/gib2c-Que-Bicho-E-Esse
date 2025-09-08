@@ -346,7 +346,18 @@
                 </div>
                 <p id="alignment-summary" class="text-lg text-gray-700 mt-8 text-center"></p>
             </div>
-            <button id="btn-alignment-next" class="btn btn-primary mt-8 px-6 py-3 text-lg">Montar Árvore →</button>
+            <div class="flex items-center gap-4 mt-8">
+                <button class="btn-back btn btn-secondary px-6 py-3 text-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-arrow-left inline-block mr-2">
+                        <path d="m12 19-7-7 7-7" />
+                        <path d="M19 12H5" />
+                    </svg>
+                    Voltar
+                </button>
+                <button id="btn-alignment-next" class="btn btn-primary px-6 py-3 text-lg">Revelar o Bicho! →</button>
+            </div>
         </div>
 
         <!-- Screen: Phylogenetic Tree -->
@@ -379,7 +390,18 @@
                     </div>
                 </div>
             </div>
-            <button id="btn-tree-next" class="btn btn-primary mt-8 px-6 py-3 text-lg">Ver Ficha Completa →</button>
+            <div class="flex items-center gap-4 mt-8">
+                <button class="btn-back btn btn-secondary px-6 py-3 text-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-arrow-left inline-block mr-2">
+                        <path d="m12 19-7-7 7-7" />
+                        <path d="M19 12H5" />
+                    </svg>
+                    Voltar
+                </button>
+                <button id="btn-tree-next" class="btn btn-primary px-6 py-3 text-lg">Identificar Outro Bicho</button>
+            </div>
         </div>
 
 
@@ -446,8 +468,19 @@
                     </div>
                 </div>
             </div>
-            <button id="btn-identify-another" class="btn btn-primary mt-8 px-6 py-3 text-lg">Identificar outro
-                bicho</button>
+            <div class="flex items-center gap-4 mt-8">
+                <button class="btn-back btn btn-secondary px-6 py-3 text-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-arrow-left inline-block mr-2">
+                        <path d="m12 19-7-7 7-7" />
+                        <path d="M19 12H5" />
+                    </svg>
+                    Voltar
+                </button>
+                <button id="btn-identify-another" class="btn btn-primary px-6 py-3 text-lg">Ver Posição na Árvore
+                    →</button>
+            </div>
         </div>
 
     </main>
@@ -514,6 +547,7 @@
 
         let currentScreen = '';
         let currentSequence = '';
+        let screenHistory = [];
         let identifiedAnimal = null;
         let identifiedEnvironment = null;
 
@@ -526,8 +560,8 @@
             genomeAssembly: document.getElementById('screen-genome-assembly'),
             databaseQuery: document.getElementById('screen-database-query'),
             geneticAlignment: document.getElementById('screen-genetic-alignment'),
-            phylogeneticTree: document.getElementById('screen-phylogenetic-tree'),
-            identificationCard: document.getElementById('screen-identification-card')
+            identificationCard: document.getElementById('screen-identification-card'),
+            phylogeneticTree: document.getElementById('screen-phylogenetic-tree')
         };
 
         // --- Data for Phylogenetic Tree ---
@@ -535,7 +569,7 @@
             {
                 name: "Vertebrados Aquáticos",
                 member_ids: ["baleia1", "tubarao1", "tartarugamarinha1", "peixe1", "pinguim1"],
-                tree_map: { 
+                tree_map: {
                     A: "baleia1",
                     B: "tubarao1",
                     C: "tartarugamarinha1",
@@ -553,7 +587,7 @@
                     A: "onca1",
                     B: "aracari1",
                     C: "macaco1",
-                    D: "macaco1"
+                    D: "sapo1"
                 },
                 characteristics: [
                     { id: 1, text: "Garras retráteis" },
@@ -601,10 +635,35 @@
 
 
         // --- Utility Functions ---
-        function showScreen(screenId) {
+        function showScreen(screenId, isBack = false) {
+            if (!isBack && currentScreen) {
+                if (currentScreen !== 'sequenceDisplay' && currentScreen !== 'sequencing') {
+                    screenHistory.push(currentScreen);
+                }
+            }
             Object.values(screens).forEach(screen => screen.classList.add('hidden'));
-            screens[screenId].classList.remove('hidden');
-            currentScreen = screenId;
+            if (screens[screenId]) {
+                screens[screenId].classList.remove('hidden');
+                currentScreen = screenId;
+            } else {
+                console.error(`Tela com id '${screenId}' não encontrada.`);
+            }
+        }
+
+        function resetApp() {
+            currentSequence = '';
+            identifiedAnimal = null;
+            identifiedEnvironment = null;
+            screenHistory = [];
+            window.history.pushState({}, document.title, window.location.pathname);
+            showScreen('home');
+        }
+
+        function goBack() {
+            if (screenHistory.length > 0) {
+                const previousScreen = screenHistory.pop();
+                showScreen(previousScreen, true);
+            }
         }
 
         function getQueryParams() {
@@ -665,12 +724,10 @@
 
         // --- Screen Logic ---
 
-        document.getElementById('header-logo').addEventListener('click', () => {
-            currentSequence = '';
-            identifiedAnimal = null;
-            identifiedEnvironment = null;
-            window.history.pushState({}, document.title, window.location.pathname);
-            showScreen('home');
+        document.getElementById('header-logo').addEventListener('click', resetApp);
+
+        document.querySelectorAll('.btn-back').forEach(button => {
+            button.addEventListener('click', goBack);
         });
 
         document.querySelectorAll('.card').forEach(card => {
@@ -862,8 +919,8 @@
         }
 
         document.getElementById('btn-alignment-next').onclick = () => {
-            showScreen('phylogeneticTree');
-            setupPhylogeneticTree(identifiedAnimal);
+            showScreen('identificationCard');
+            displayIdentificationCard(identifiedAnimal);
         };
 
         function setupPhylogeneticTree(animal) {
@@ -950,14 +1007,13 @@
         }
 
         document.getElementById('btn-tree-next').onclick = () => {
-            showScreen('identificationCard');
-            displayIdentificationCard(identifiedAnimal);
+            resetApp();
         };
 
         function displayIdentificationCard(animal) {
             if (!animal) return;
 
-            document.getElementById('card-animal-name').textContent = `${animal.name} (${animal.scientificName})`;
+            document.getElementById('card-animal-name').innerHTML = `${animal.name} (<i>${animal.scientificName}</i>)`;
             document.getElementById('card-animal-image').src = animal.image;
             document.getElementById('card-animal-image').onerror = function () { this.src = 'https://placehold.co/200x200/CCCCCC/666666?text=Imagem+N/A'; };
             document.getElementById('card-description').textContent = animal.description;
@@ -971,16 +1027,13 @@
             document.getElementById('card-taxonomy-class').textContent = taxonomy.class;
             document.getElementById('card-taxonomy-order').textContent = taxonomy.order;
             document.getElementById('card-taxonomy-family').textContent = taxonomy.family;
-            document.getElementById('card-taxonomy-genus').textContent = taxonomy.genus;
-            document.getElementById('card-taxonomy-species').textContent = taxonomy.species;
+            document.getElementById('card-taxonomy-genus').innerHTML = `<i>${taxonomy.genus}</i>`;
+            document.getElementById('card-taxonomy-species').innerHTML = `<i>${taxonomy.species}</i>`;
         }
 
         document.getElementById('btn-identify-another').onclick = () => {
-            currentSequence = '';
-            identifiedAnimal = null;
-            identifiedEnvironment = null;
-            window.history.pushState({}, document.title, window.location.pathname);
-            showScreen('home');
+            showScreen('phylogeneticTree');
+            setupPhylogeneticTree(identifiedAnimal);
         };
 
         const privacyModal = document.getElementById('privacy-modal');
@@ -1009,7 +1062,7 @@
 
         function validateAndProcessSequence(sequence) {
             const errorMessageEl = document.getElementById('sequence-error-message');
-            if (!errorMessageEl) return; 
+            if (!errorMessageEl) return;
             errorMessageEl.textContent = '';
 
             if (!/^[ATCG]+$/.test(sequence)) {
@@ -1031,6 +1084,7 @@
             currentSequence = sequence;
             identifiedAnimal = animal;
             showScreen('introSequence');
+            // startSequenceDisplay(currentSequence);
         }
 
         async function initializeApp() {
@@ -1039,7 +1093,7 @@
             if (!response.ok) {
                 throw new Error(`Erro ao buscar o arquivo: ${response.statusText}`);
             }
-            const speciesDataJSON  = await response.json();
+            const speciesDataJSON = await response.json();
 
 
             //const speciesDataJSON = {

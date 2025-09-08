@@ -8,7 +8,11 @@
             "description": "Maior animal que já existiu. Se alimenta de krill e vive em todos os oceanos.",
             "habitat": "Oceanos do mundo todo, migra entre águas frias e quentes.",
             "geneticFeatures": "Genes ligados à longevidade, reparo celular e resistência a doenças.",
-            "physical_characteristics": ["Corpo alongado e esguio", "Nadadeiras peitorais grandes", "Presença de barbas de baleia"],
+            "physical_characteristics": [
+                "Corpo alongado e esguio",
+                "Nadadeiras peitorais grandes",
+                "Presença de barbas de baleia"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -29,7 +33,11 @@
             "description": "Grande predador marinho, famoso por sua força e velocidade.",
             "habitat": "Costas temperadas e tropicais de todos os oceanos.",
             "geneticFeatures": "Genes ligados à regeneração, cicatrização e resistência a câncer.",
-            "physical_characteristics": ["Corpo fusiforme", "Dentes serrilhados em várias fileiras", "Barbatana dorsal proeminente"],
+            "physical_characteristics": [
+                "Corpo fusiforme",
+                "Dentes serrilhados em várias fileiras",
+                "Barbatana dorsal proeminente"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -40,7 +48,7 @@
                 "species": "C. carcharias"
             },
             "curiosity": "Pode detectar uma gota de sangue em 100 litros de água.",
-            "image": "Images/Animals/Marinhos/Tubarão-branco.png"
+            "image": "Images/Animals/Marinhos/Tubarao-branco.png"
         },
         {
             "id": "tartarugamarinha1",
@@ -50,7 +58,11 @@
             "description": "Uma das maiores tartarugas marinhas, herbívora na fase adulta.",
             "habitat": "Oceanos tropicais e subtropicais, recifes e estuários.",
             "geneticFeatures": "Genes ligados à navegação oceânica e resistência em longas jornadas.",
-            "physical_characteristics": ["Casco ósseo dorsal", "Nadadeiras em forma de remo", "Bico córneo"],
+            "physical_characteristics": [
+                "Casco ósseo dorsal",
+                "Nadadeiras em forma de remo",
+                "Bico córneo"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -71,7 +83,11 @@
             "description": "Peixe grande e veloz, vive em cardumes, comum na pesca.",
             "habitat": "Águas costeiras e recifes de mares tropicais e subtropicais.",
             "geneticFeatures": "Genes ligados ao crescimento rápido e resistência à salinidade.",
-            "physical_characteristics": ["Corpo coberto por escamas", "Respiração por brânquias", "Linha lateral sensível"],
+            "physical_characteristics": [
+                "Corpo coberto por escamas",
+                "Respiração por brânquias",
+                "Linha lateral sensível"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -92,7 +108,11 @@
             "description": "Maior dos pinguins, vive na Antártida e resiste a temperaturas extremas.",
             "habitat": "Geleiras da Antártida e águas geladas do oceano.",
             "geneticFeatures": "Genes adaptados para conservar calor e produzir proteínas anticongelantes.",
-            "physical_characteristics": ["Corpo coberto por penas", "Asas adaptadas para natação", "Postura ereta"],
+            "physical_characteristics": [
+                "Corpo coberto por penas",
+                "Asas adaptadas para natação",
+                "Postura ereta"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -115,7 +135,11 @@
             "description": "Maior felino das Américas, tem uma mordida superforte, capaz de quebrar cascos.",
             "habitat": "Florestas tropicais da Amazônia, Cerrado e Pantanal.",
             "geneticFeatures": "Genes ligados à visão noturna, olfato apurado e força muscular.",
-            "physical_characteristics": ["Pelagem com manchas (rosetas)", "Garras retráteis", "Caninos proeminentes"],
+            "physical_characteristics": [
+                "Pelagem com manchas (rosetas)",
+                "Garras retráteis",
+                "Caninos proeminentes"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -136,7 +160,11 @@
             "description": "Ave parecida com tucano, com bico longo e colorido, vive em grupos e se alimenta de frutas.",
             "habitat": "Florestas tropicais da Amazônia e Mata Atlântica.",
             "geneticFeatures": "Genes que ajudam no equilíbrio e desenvolvimento do bico leve.",
-            "physical_characteristics": ["Bico grande e colorido", "Corpo coberto de penas", "Pés com dois dedos para frente e dois para trás"],
+            "physical_characteristics": [
+                "Bico grande e colorido",
+                "Corpo coberto de penas",
+                "Pés com dois dedos para frente e dois para trás"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -157,7 +185,11 @@
             "description": "Serpente grande e não venenosa. Mata suas presas enrolando seu corpo e sufocando.",
             "habitat": "Florestas tropicais e áreas próximas a rios em toda a América Latina.",
             "geneticFeatures": "Genes relacionados ao olfato desenvolvido e musculatura forte.",
-            "physical_characteristics": ["Corpo coberto por escamas", "Ausência de patas", "Mandíbula flexível"],
+            "physical_characteristics": [
+                "Corpo coberto por escamas",
+                "Ausência de patas",
+                "Mandíbula flexível"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -172,13 +204,17 @@
         },
         {
             "id": "sapo1",
-            "sequence": "ATGGTCATACGA",
+            "sequence": "ATGGTTATCACC",
             "name": "Sapo-ponta-de-flecha",
             "scientificName": "Dendrobates tinctorius",
             "description": "Sapo colorido, famoso por sua pele com toxinas potentes.",
             "habitat": "Florestas tropicais da América do Sul, principalmente na Amazônia.",
             "geneticFeatures": "Genes que produzem toxinas e cores vivas para alertar predadores.",
-            "physical_characteristics": ["Pele úmida e permeável", "Metamorfose (girino para adulto)", "Patas traseiras longas para saltar"],
+            "physical_characteristics": [
+                "Pele úmida e permeável",
+                "Metamorfose (girino para adulto)",
+                "Patas traseiras longas para saltar"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -199,7 +235,11 @@
             "description": "Macaco muito inteligente, usa ferramentas como pedras para quebrar sementes.",
             "habitat": "Florestas tropicais da América do Sul, como Amazônia e Mata Atlântica.",
             "geneticFeatures": "Genes relacionados à inteligência, uso de ferramentas e vida social complexa.",
-            "physical_characteristics": ["Polegares opositores", "Cauda preênsil", "Visão binocular"],
+            "physical_characteristics": [
+                "Polegares opositores",
+                "Cauda preênsil",
+                "Visão binocular"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -222,7 +262,11 @@
             "description": "Formiga que corta folhas para cultivar fungos, que são sua principal alimentação.",
             "habitat": "Florestas tropicais da América do Sul e Central.",
             "geneticFeatures": "Genes ligados à vida social, simbiose com fungos e divisão de trabalho.",
-            "physical_characteristics": ["Exoesqueleto de quitina", "Corpo dividido em cabeça, tórax e abdômen", "Antenas para comunicação"],
+            "physical_characteristics": [
+                "Exoesqueleto de quitina",
+                "Corpo dividido em cabeça, tórax e abdômen",
+                "Antenas para comunicação"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Arthropoda",
@@ -243,7 +287,11 @@
             "description": "Aranha pequena que vive em cavernas, quase sem olhos e sem cor, adaptada à escuridão.",
             "habitat": "Cavernas do norte da Itália.",
             "geneticFeatures": "Genes que ajudam na perda de pigmentação, olhos reduzidos e maior sensibilidade ao toque.",
-            "physical_characteristics": ["Oito pernas", "Corpo dividido em cefalotórax e abdômen", "Produção de seda"],
+            "physical_characteristics": [
+                "Oito pernas",
+                "Corpo dividido em cefalotórax e abdômen",
+                "Produção de seda"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Arthropoda",
@@ -264,7 +312,11 @@
             "description": "Escorpião que vive em cavernas do México, sem olhos e de cor clara.",
             "habitat": "Cavernas do México, especialmente em ambientes de calcário.",
             "geneticFeatures": "Genes ligados à vida sem luz, sensores de vibração e toque mais desenvolvidos.",
-            "physical_characteristics": ["Pinças (pedipalpos)", "Cauda com aguilhão (telson)", "Corpo segmentado"],
+            "physical_characteristics": [
+                "Pinças (pedipalpos)",
+                "Cauda com aguilhão (telson)",
+                "Corpo segmentado"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Arthropoda",
@@ -285,7 +337,11 @@
             "description": "Pequeno crustáceo parecido com camarão, sem olhos e sem pigmento.",
             "habitat": "Cavernas subaquáticas dos EUA (Alabama e Tennessee).",
             "geneticFeatures": "Genes ligados à perda de pigmentação e adaptação a ambientes sem luz.",
-            "physical_characteristics": ["Corpo lateralmente achatado", "Exoesqueleto segmentado", "Vários pares de apêndices"],
+            "physical_characteristics": [
+                "Corpo lateralmente achatado",
+                "Exoesqueleto segmentado",
+                "Vários pares de apêndices"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Arthropoda",
@@ -306,7 +362,11 @@
             "description": "Grilo que canta esfregando suas asas. Vive no solo, escondido durante o dia e ativo à noite.",
             "habitat": "Américas do Norte, Central e do Sul, em florestas, campos e até áreas urbanas.",
             "geneticFeatures": "Genes que controlam a produção de som pelas asas e audição pelas pernas.",
-            "physical_characteristics": ["Asas endurecidas (tégminas)", "Pernas traseiras adaptadas para saltar", "Antenas longas e filiformes"],
+            "physical_characteristics": [
+                "Asas endurecidas (tégminas)",
+                "Pernas traseiras adaptadas para saltar",
+                "Antenas longas e filiformes"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Arthropoda",
@@ -329,7 +389,11 @@
             "description": "Peixe que vive no escuro das cavernas, sem olhos e sem cor, usa sensores para se orientar.",
             "habitat": "Cavernas e rios subterrâneos no México.",
             "geneticFeatures": "Genes ligados à perda dos olhos e aumento da sensibilidade tátil e química.",
-            "physical_characteristics": ["Ausência de olhos", "Falta de pigmentação (albinismo)", "Linha lateral altamente desenvolvida"],
+            "physical_characteristics": [
+                "Ausência de olhos",
+                "Falta de pigmentação (albinismo)",
+                "Linha lateral altamente desenvolvida"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -350,7 +414,11 @@
             "description": "Anfíbio pálido e sem olhos, vive em cavernas da Europa e pode viver mais de 100 anos.",
             "habitat": "Cavernas da Eslovênia, Croácia, Itália e Bósnia.",
             "geneticFeatures": "Genes que favorecem regeneração, baixa taxa de metabolismo e vida longa em ambientes escuros.",
-            "physical_characteristics": ["Corpo alongado, semelhante a uma serpente", "Brânquias externas na fase adulta", "Pele sem pigmentação"],
+            "physical_characteristics": [
+                "Corpo alongado, semelhante a uma serpente",
+                "Brânquias externas na fase adulta",
+                "Pele sem pigmentação"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -371,7 +439,11 @@
             "description": "Fóssil que mostra a transição entre dinossauros e aves. Tinha penas, dentes e cauda óssea.",
             "habitat": "Europa (atual Alemanha) há cerca de 150 milhões de anos.",
             "geneticFeatures": "Sem DNA preservado, mas os fósseis mostram características de aves e dinossauros.",
-            "physical_characteristics": ["Presença de penas", "Dentes na mandíbula", "Cauda longa e óssea"],
+            "physical_characteristics": [
+                "Presença de penas",
+                "Dentes na mandíbula",
+                "Cauda longa e óssea"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -392,7 +464,11 @@
             "description": "Um dos maiores dinossauros carnívoros. Forte, rápido e com a mordida mais poderosa da história.",
             "habitat": "América do Norte há 68 a 66 milhões de anos.",
             "geneticFeatures": "Não há DNA, mas proteínas mostram relação próxima com as aves atuais.",
-            "physical_characteristics": ["Crânio grande e pesado", "Braços muito pequenos com dois dedos", "Dentes grandes e cônicos"],
+            "physical_characteristics": [
+                "Crânio grande e pesado",
+                "Braços muito pequenos com dois dedos",
+                "Dentes grandes e cônicos"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",
@@ -413,7 +489,11 @@
             "description": "Parente dos elefantes atuais, tinha pelos grossos e presas grandes, adaptado ao frio extremo.",
             "habitat": "Regiões frias da Europa, Ásia e América do Norte na Era do Gelo.",
             "geneticFeatures": "Possuímos DNA real, com genes ligados a pelos longos, gordura e resistência ao frio.",
-            "physical_characteristics": ["Pelagem longa e densa", "Grandes presas de marfim curvadas", "Camada espessa de gordura"],
+            "physical_characteristics": [
+                "Pelagem longa e densa",
+                "Grandes presas de marfim curvadas",
+                "Camada espessa de gordura"
+            ],
             "taxonomy": {
                 "kingdom": "Animalia",
                 "phylum": "Chordata",

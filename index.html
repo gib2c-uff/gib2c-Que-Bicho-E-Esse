@@ -555,9 +555,9 @@
             home: document.getElementById('screen-home'),
             scanQr: document.getElementById('screen-scan-qr'),
             introSequence: document.getElementById('screen-intro-sequence'),
-            sequenceDisplay: document.getElementById('screen-sequence-display'),
-            sequencing: document.getElementById('screen-sequencing'),
-            genomeAssembly: document.getElementById('screen-genome-assembly'),
+            // sequenceDisplay: document.getElementById('screen-sequence-display'), // iGNORAR ESTAS TELAS E REMOVER O TIMER, APOS REVELAR SEQUENCIA IR DIRETO PARA "Alinhamento Genético"
+            // sequencing: document.getElementById('screen-sequencing'), // iGNORAR ESTAS TELAS E REMOVER O TIMER, APOS REVELAR SEQUENCIA IR DIRETO PARA "Alinhamento Genético"
+            // genomeAssembly: document.getElementById('screen-genome-assembly'), // iGNORAR ESTAS TELAS E REMOVER O TIMER, APOS REVELAR SEQUENCIA IR DIRETO PARA "Alinhamento Genético"
             databaseQuery: document.getElementById('screen-database-query'),
             geneticAlignment: document.getElementById('screen-genetic-alignment'),
             identificationCard: document.getElementById('screen-identification-card'),
@@ -571,9 +571,9 @@
                 member_ids: ["baleia1", "tubarao1", "tartarugamarinha1", "peixe1", "pinguim1"],
                 tree_map: {
                     A: "baleia1",
-                    B: "tubarao1",
+                    B: "pinguim1",
                     C: "tartarugamarinha1",
-                    D: "peixe1"
+                    D: "tubarao1"
                 },
                 characteristics: [
                     { id: 1, text: "Corpo coberto por escamas" },
@@ -584,10 +584,10 @@
                 name: "Ambiente Florestal",
                 member_ids: ["onca1", "aracari1", "jiboia1", "macaco1", "sapo1"],
                 tree_map: {
-                    A: "onca1",
-                    B: "aracari1",
-                    C: "macaco1",
-                    D: "sapo1"
+                    A: "macaco1",
+                    B: "onca1",
+                    C: "aracari1",
+                    D: "jiboia1"
                 },
                 characteristics: [
                     { id: 1, text: "Garras retráteis" },
@@ -598,10 +598,10 @@
                 name: "Evolução dos Dinossauros e Parentes",
                 member_ids: ["peixecaverna1", "archaeopteryx1", "tiranossauro1", "mamute1"],
                 tree_map: {
-                    A: "peixecaverna1",
-                    B: "archaeopteryx1",
-                    C: "tiranossauro1",
-                    D: "mamute1"
+                    A: "mamute1",
+                    B: "peixecaverna1",
+                    C: "archaeopteryx1",
+                    D: "tiranossauro1"
                 },
                 characteristics: [
                     { id: 1, text: "Camada espessa de gordura" },
@@ -612,10 +612,10 @@
                 name: "Artrópodes",
                 member_ids: ["formiga1", "aranha1", "escorpiao1", "anfipode1"],
                 tree_map: {
-                    A: "formiga1",
-                    B: "grilo1",
-                    C: "aranha1",
-                    D: "anfipode1"
+                    A: "escorpiao1",
+                    B: "aranha1",
+                    C: "anfipode1",
+                    D: "formiga1"
                 },
                 characteristics: [
                     { id: 1, text: "Mandíbulas (Mandibulata)" },
@@ -743,34 +743,42 @@
         });
 
         document.getElementById('btn-start-viewing-sequence').onclick = () => {
-            showScreen('sequenceDisplay');
-            startSequenceDisplay(currentSequence);
+            // showScreen('sequenceDisplay');
+            // startSequenceDisplay(currentSequence);
+            identifiedAnimal = findAnimalBySequence(currentSequence);
+            if (identifiedAnimal) {
+                showScreen('geneticAlignment');
+                setupGeneticAlignment(identifiedAnimal);
+            } else {
+                console.error("Animal não encontrado. Retornando.");
+                showScreen('home');
+            }
         };
 
-        function startSequenceDisplay(sequence) {
-            currentSequence = sequence;
-            document.getElementById('display-sequence').textContent = formatSequence(sequence);
-            const progressBar = document.getElementById('sequence-display-progress');
-            const timerText = document.getElementById('sequence-display-timer-text');
-            const duration = 5;
-            let timeLeft = duration;
-            progressBar.style.width = '0%';
-            timerText.textContent = `Tempo restante: ${timeLeft} segundos`;
+        // function startSequenceDisplay(sequence) {
+        //     currentSequence = sequence;
+        //     document.getElementById('display-sequence').textContent = formatSequence(sequence);
+        //     const progressBar = document.getElementById('sequence-display-progress');
+        //     const timerText = document.getElementById('sequence-display-timer-text');
+        //     const duration = 5;
+        //     let timeLeft = duration;
+        //     progressBar.style.width = '0%';
+        //     timerText.textContent = `Tempo restante: ${timeLeft} segundos`;
 
-            let startTime = Date.now();
-            const interval = setInterval(() => {
-                const elapsedTime = (Date.now() - startTime) / 1000;
-                const progress = (elapsedTime / duration) * 100;
-                progressBar.style.width = `${progress}%`;
-                timeLeft = Math.max(0, duration - Math.floor(elapsedTime));
-                timerText.textContent = `Tempo restante: ${timeLeft} segundos`;
-                if (elapsedTime >= duration) {
-                    clearInterval(interval);
-                    showScreen('genomeAssembly');
-                    setupGenomeAssemblyPuzzle(currentSequence);
-                }
-            }, 150);
-        }
+        //     let startTime = Date.now();
+        //     const interval = setInterval(() => {
+        //         const elapsedTime = (Date.now() - startTime) / 1000;
+        //         const progress = (elapsedTime / duration) * 100;
+        //         progressBar.style.width = `${progress}%`;
+        //         timeLeft = Math.max(0, duration - Math.floor(elapsedTime));
+        //         timerText.textContent = `Tempo restante: ${timeLeft} segundos`;
+        //         if (elapsedTime >= duration) {
+        //             clearInterval(interval);
+        //             showScreen('genomeAssembly');
+        //             setupGenomeAssemblyPuzzle(currentSequence);
+        //         }
+        //     }, 150);
+        // }
 
         let originalSequenceBlocks = [];
         let assembledBlocks = [];

@@ -282,7 +282,7 @@
         {
             "id": "aranha1",
             "sequence": "TTGACCTGCAGC",
-            "name": "Aranha cavernícola",
+            "name": "Aranha",
             "scientificName": "Troglohyphantes vignai",
             "description": "Aranha pequena que vive em cavernas, quase sem olhos e sem cor, adaptada à escuridão.",
             "habitat": "Cavernas do norte da Itália.",
@@ -307,7 +307,7 @@
         {
             "id": "escorpiao1",
             "sequence": "TTGACCTGTAGG",
-            "name": "Escorpião cavernícola",
+            "name": "Escorpião",
             "scientificName": "Typhlochactas mitchelli",
             "description": "Escorpião que vive em cavernas do México, sem olhos e de cor clara.",
             "habitat": "Cavernas do México, especialmente em ambientes de calcário.",
@@ -332,7 +332,7 @@
         {
             "id": "anfipode1",
             "sequence": "TTGACCTGCACA",
-            "name": "Anfípode cavernícola",
+            "name": "Anfípode",
             "scientificName": "Stygobromus hayi",
             "description": "Pequeno crustáceo parecido com camarão, sem olhos e sem pigmento.",
             "habitat": "Cavernas subaquáticas dos EUA (Alabama e Tennessee).",

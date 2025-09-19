@@ -559,7 +559,7 @@
             // sequencing: document.getElementById('screen-sequencing'), // iGNORAR ESTAS TELAS E REMOVER O TIMER, APOS REVELAR SEQUENCIA IR DIRETO PARA "Alinhamento Genético"
             // genomeAssembly: document.getElementById('screen-genome-assembly'), // iGNORAR ESTAS TELAS E REMOVER O TIMER, APOS REVELAR SEQUENCIA IR DIRETO PARA "Alinhamento Genético"
             databaseQuery: document.getElementById('screen-database-query'),
-            geneticAlignment: document.getElementById('screen-genetic-alignment'),
+            // geneticAlignment: document.getElementById('screen-genetic-alignment'),
             identificationCard: document.getElementById('screen-identification-card'),
             phylogeneticTree: document.getElementById('screen-phylogenetic-tree')
         };
@@ -747,7 +747,7 @@
             // startSequenceDisplay(currentSequence);
             identifiedAnimal = findAnimalBySequence(currentSequence);
             if (identifiedAnimal) {
-                showScreen('geneticAlignment');
+                showScreen('identificationCard');
                 setupGeneticAlignment(identifiedAnimal);
             } else {
                 console.error("Animal não encontrado. Retornando.");
@@ -869,7 +869,7 @@
         document.getElementById('btn-assembly-next').onclick = () => {
             identifiedAnimal = findAnimalBySequence(currentSequence);
             if (identifiedAnimal) {
-                showScreen('geneticAlignment');
+                showScreen('identificationCard');
                 setupGeneticAlignment(identifiedAnimal);
             } else {
                 console.error("Animal não encontrado após montagem. Retornando.");
@@ -1092,6 +1092,7 @@
             currentSequence = sequence;
             identifiedAnimal = animal;
             showScreen('introSequence');
+            displayIdentificationCard(identifiedAnimal);
             // startSequenceDisplay(currentSequence);
         }
 

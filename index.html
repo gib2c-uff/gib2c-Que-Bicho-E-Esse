@@ -287,10 +287,8 @@
         <!-- Screen: Home - Coleta -->
         <div id="screen-home" class="screen flex flex-col items-center justify-center w-full z-10">
             <div class="text-center mb-10 max-w-3xl">
-                <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-4 font-poppins tracking-tight">Onde você
-                    encontrou seu bicho?</h2>
-                <p class="text-slate-500 text-lg font-light">Selecione o ambiente de onde sua amostra foi coletada para
-                    iniciarmos a expedição científica.</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-4 font-poppins tracking-tight">Onde você encontrou seu bicho?</h2>
+                <p class="text-slate-500 text-lg font-light">Selecione o ambiente de onde sua amostra foi coletada para iniciarmos a expedição científica.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl mb-10">
@@ -613,9 +611,16 @@
                     </div>
 
                     <div class="flex flex-col items-center gap-4">
-                        <button id="btn-check-assembly"
-                            class="btn btn-primary px-8 py-3 text-lg w-full md:w-auto z-20 relative">Verificar
-                            Montagem</button>
+                        <div class="flex gap-4 mt-8">
+                            <button id="btn-check-assembly"
+                                class="btn btn-primary px-8 py-3 text-lg w-full md:w-auto z-20 relative">
+                                Verificar Montagem
+                            </button>
+                            <button id="btn-skip-assembly"
+                                class="btn btn-secondary px-8 py-3 text-lg w-full md:w-auto z-20 relative hover:bg-slate-200 transition-colors">
+                                Pular Verificação
+                            </button>
+                        </div>
                         <p id="assembly-message" class="h-6 font-semibold"></p>
 
                         <button id="btn-assembly-next"
@@ -1448,10 +1453,22 @@
             targetArea.innerHTML = '<span class="text-slate-400 text-sm pointer-events-none">Clique nos blocos abaixo para montar aqui</span>';
 
             document.getElementById('btn-check-assembly').onclick = checkGenomeAssembly;
-            document.getElementById('btn-check-assembly').classList.remove('hidden'); // Ensure visible
+            document.getElementById('btn-check-assembly').classList.remove('hidden'); 
             document.getElementById('btn-assembly-next').classList.add('hidden');
             document.getElementById('assembly-message').textContent = '';
             document.getElementById('assembly-message').className = 'h-6 font-semibold';
+
+            document.getElementById('btn-skip-assembly').onclick = () => {
+                identifiedAnimal = findAnimalBySequence(currentSequence);
+                
+                if (identifiedAnimal) {
+                    showScreen('identificationCard');
+                    displayIdentificationCard(identifiedAnimal);
+                    setupGeneticAlignment(identifiedAnimal);
+                } else {
+                    showScreen('home');
+                }
+            };
 
             const showSequenceBtn = document.getElementById('btn-show-sequence');
             showSequenceBtn.onclick = () => {

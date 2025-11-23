@@ -23,7 +23,8 @@
                 "species": "B. musculus"
             },
             "curiosity": "O coração pesa tanto quanto um carro popular.",
-            "image": "Images/Animals/Marinhos/Baleia-azul.png"
+            "image": "Images/Animals/Marinhos/Baleia-azul.png",
+            "link_fonte":""
         },
         {
             "id": "tubarao1",
@@ -48,7 +49,8 @@
                 "species": "C. carcharias"
             },
             "curiosity": "Pode detectar uma gota de sangue em 100 litros de água.",
-            "image": "Images/Animals/Marinhos/Tubarao-branco.png"
+            "image": "Images/Animals/Marinhos/Tubarao-branco.png",
+            "link_fonte":""
         },
         {
             "id": "tartarugamarinha1",
@@ -73,7 +75,8 @@
                 "species": "C. mydas"
             },
             "curiosity": "Migra mais de 2000 km entre áreas de alimentação e reprodução.",
-            "image": "Images/Animals/Marinhos/Tartaruga-verde.png"
+            "image": "Images/Animals/Marinhos/Tartaruga-verde.png",
+            "link_fonte":""
         },
         {
             "id": "peixe1",
@@ -98,7 +101,8 @@
                 "species": "S. dumerili"
             },
             "curiosity": "Nada até 60 km/h para capturar presas.",
-            "image": "Images/Animals/Marinhos/Peixe-olho-de-boi.png"
+            "image": "Images/Animals/Marinhos/Peixe-olho-de-boi.png",
+            "link_fonte":""
         },
         {
             "id": "pinguim1",
@@ -123,7 +127,8 @@
                 "species": "A. forsteri"
             },
             "curiosity": "Pode ficar até 2 meses sem comer protegendo seus ovos.",
-            "image": "Images/Animals/Marinhos/Pinguim-imperador.png"
+            "image": "Images/Animals/Marinhos/Pinguim-imperador.png",
+            "link_fonte":""
         }
     ],
     "ambienteFloresta": [
@@ -150,7 +155,8 @@
                 "species": "P. onca"
             },
             "curiosity": "É o único felino que gosta de nadar e caça na água.",
-            "image": "Images/Animals/Floresta/Onça-pintada.png"
+            "image": "Images/Animals/Floresta/Onça-pintada.png",
+            "link_fonte":""
         },
         {
             "id": "aracari1",
@@ -175,7 +181,8 @@
                 "species": "P. aracari"
             },
             "curiosity": "O bico parece pesado, mas é bem leve, como se fosse feito de espuma.",
-            "image": "Images/Animals/Floresta/Araçari.png"
+            "image": "Images/Animals/Floresta/Araçari.png",
+            "link_fonte":""
         },
         {
             "id": "jiboia1",
@@ -200,7 +207,8 @@
                 "species": "B. constrictor"
             },
             "curiosity": "Possui sensores térmicos que funcionam como visão infravermelha.",
-            "image": "Images/Animals/Floresta/Jiboia.png"
+            "image": "Images/Animals/Floresta/Jiboia.png",
+            "link_fonte":""
         },
         {
             "id": "sapo1",
@@ -225,7 +233,8 @@
                 "species": "D. tinctorius"
             },
             "curiosity": "Se criado em cativeiro, não é venenoso porque não come insetos tóxicos.",
-            "image": "Images/Animals/Floresta/Sapo-ponta-de-flecha.png"
+            "image": "Images/Animals/Floresta/Sapo-ponta-de-flecha.png",
+            "link_fonte":""
         },
         {
             "id": "macaco1",
@@ -250,7 +259,8 @@
                 "species": "S. apella"
             },
             "curiosity": "Usa pedras como martelo para quebrar castanhas.",
-            "image": "Images/Animals/Floresta/Macaco-prego.png"
+            "image": "Images/Animals/Floresta/Macaco-prego.png",
+            "link_fonte":""
         }
     ],
     "ambienteSolo": [
@@ -277,7 +287,8 @@
                 "species": "A. cephalotes"
             },
             "curiosity": "Uma única colônia pode ter até 5 milhões de formigas!",
-            "image": "Images/Animals/Solo/Formiga-cortadeira.png"
+            "image": "Images/Animals/Solo/Formiga-cortadeira.png",
+            "link_fonte":""
         },
         {
             "id": "aranha1",
@@ -302,7 +313,8 @@
                 "species": "T. vignai"
             },
             "curiosity": "Diferente de muitas aranhas, não usa teia para caçar.",
-            "image": "Images/Animals/Solo/Aranha cavernícola.png"
+            "image": "Images/Animals/Solo/Aranha cavernícola.png",
+            "link_fonte":""
         },
         {
             "id": "escorpiao1",
@@ -327,7 +339,8 @@
                 "species": "T. mitchelli"
             },
             "curiosity": "É um dos poucos escorpiões do mundo totalmente adaptados às cavernas.",
-            "image": "Images/Animals/Solo/Escorpião cavernícola.png"
+            "image": "Images/Animals/Solo/Escorpião cavernícola.png",
+            "link_fonte":""
         },
         {
             "id": "anfipode1",
@@ -352,7 +365,8 @@
                 "species": "S. hayi"
             },
             "curiosity": "Sua presença indica água extremamente limpa e sem poluição.",
-            "image": "Images/Animals/Solo/Anfípode cavernícola.png"
+            "image": "Images/Animals/Solo/Anfípode cavernícola.png",
+            "link_fonte":""
         },
         {
             "id": "grilo1",
@@ -377,7 +391,8 @@
                 "species": "G. assimilis"
             },
             "curiosity": "Cada espécie tem seu próprio canto, como se fosse uma assinatura sonora.",
-            "image": "Images/Animals/Solo/Grilo-preto.png"
+            "image": "Images/Animals/Solo/Grilo-preto.png",
+            "link_fonte":""
         }
     ],
     "ambienteCavernaFossil": [
@@ -404,7 +419,8 @@
                 "species": "A. mexicanus"
             },
             "curiosity": "Mesmo sem olhos, navega muito bem usando sensores que percebem vibrações na água.",
-            "image": "Images/Animals/Fosseis/Peixe-cego-de-caverna.png"
+            "image": "Images/Animals/Fosseis/Peixe-cego-de-caverna.png",
+            "link_fonte":""
         },
         {
             "id": "olm1",
@@ -429,7 +445,8 @@
                 "species": "P. anguinus"
             },
             "curiosity": "Pode ficar até 10 anos sem comer!",
-            "image": "Images/Animals/Fosseis/Salamandra-cega.png"
+            "image": "Images/Animals/Fosseis/Salamandra-cega.png",
+            "link_fonte":""
         },
         {
             "id": "archaeopteryx1",
@@ -454,7 +471,8 @@
                 "species": "A. lithographica"
             },
             "curiosity": "Provavelmente não voava como aves modernas, mas conseguia planar.",
-            "image": "Images/Animals/Fosseis/Archaeopteryx.png"
+            "image": "Images/Animals/Fosseis/Archaeopteryx.png",
+            "link_fonte":""
         },
         {
             "id": "tiranossauro1",
@@ -479,7 +497,8 @@
                 "species": "T. rex"
             },
             "curiosity": "Sua mordida era forte o suficiente para esmagar ossos.",
-            "image": "Images/Animals/Fosseis/Tiranossauro rex.png"
+            "image": "Images/Animals/Fosseis/Tiranossauro rex.png",
+            "link_fonte":""
         },
         {
             "id": "mamute1",
@@ -504,7 +523,8 @@
                 "species": "M. primigenius"
             },
             "curiosity": "Cientistas tentam trazer de volta uma espécie parecida usando engenharia genética.",
-            "image": "Images/Animals/Fosseis/Mamute-lanoso.png"
+            "image": "Images/Animals/Fosseis/Mamute-lanoso.png",
+            "link_fonte":""
         }
     ]
 }

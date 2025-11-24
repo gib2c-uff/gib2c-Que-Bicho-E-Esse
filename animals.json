@@ -24,7 +24,7 @@
             },
             "curiosity": "O coração pesa tanto quanto um carro popular.",
             "image": "Images/Animals/Marinhos/Baleia-azul.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/190016783"
         },
         {
             "id": "tubarao1",
@@ -50,7 +50,7 @@
             },
             "curiosity": "Pode detectar uma gota de sangue em 100 litros de água.",
             "image": "Images/Animals/Marinhos/Tubarao-branco.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/256243920"
         },
         {
             "id": "tartarugamarinha1",
@@ -76,7 +76,7 @@
             },
             "curiosity": "Migra mais de 2000 km entre áreas de alimentação e reprodução.",
             "image": "Images/Animals/Marinhos/Tartaruga-verde.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/326256539"
         },
         {
             "id": "peixe1",
@@ -102,7 +102,7 @@
             },
             "curiosity": "Nada até 60 km/h para capturar presas.",
             "image": "Images/Animals/Marinhos/Peixe-olho-de-boi.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/268368667"
         },
         {
             "id": "pinguim1",
@@ -128,7 +128,7 @@
             },
             "curiosity": "Pode ficar até 2 meses sem comer protegendo seus ovos.",
             "image": "Images/Animals/Marinhos/Pinguim-imperador.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/325265630"
         }
     ],
     "ambienteFloresta": [
@@ -156,7 +156,7 @@
             },
             "curiosity": "É o único felino que gosta de nadar e caça na água.",
             "image": "Images/Animals/Floresta/Onça-pintada.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/322915343"
         },
         {
             "id": "aracari1",
@@ -182,7 +182,7 @@
             },
             "curiosity": "O bico parece pesado, mas é bem leve, como se fosse feito de espuma.",
             "image": "Images/Animals/Floresta/Araçari.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/327716172"
         },
         {
             "id": "jiboia1",
@@ -208,13 +208,13 @@
             },
             "curiosity": "Possui sensores térmicos que funcionam como visão infravermelha.",
             "image": "Images/Animals/Floresta/Jiboia.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/277795962"
         },
         {
             "id": "sapo1",
             "sequence": "ATGGTCATACGA",
             "name": "Sapo-ponta-de-flecha",
-            "scientificName": "Dendrobates tinctorius",
+            "scientificName": "Dendrobates auratus",
             "description": "Sapo colorido, famoso por sua pele com toxinas potentes.",
             "habitat": "Florestas tropicais da América do Sul, principalmente na Amazônia.",
             "geneticFeatures": "Genes que produzem toxinas e cores vivas para alertar predadores.",
@@ -230,11 +230,11 @@
                 "order": "Anura",
                 "family": "Dendrobatidae",
                 "genus": "Dendrobates",
-                "species": "D. tinctorius"
+                "species": "D. auratus"
             },
             "curiosity": "Se criado em cativeiro, não é venenoso porque não come insetos tóxicos.",
             "image": "Images/Animals/Floresta/Sapo-ponta-de-flecha.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/314662405"
         },
         {
             "id": "macaco1",
@@ -260,7 +260,7 @@
             },
             "curiosity": "Usa pedras como martelo para quebrar castanhas.",
             "image": "Images/Animals/Floresta/Macaco-prego.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/327860691"
         }
     ],
     "ambienteSolo": [
@@ -288,13 +288,13 @@
             },
             "curiosity": "Uma única colônia pode ter até 5 milhões de formigas!",
             "image": "Images/Animals/Solo/Formiga-cortadeira.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/327341164"
         },
         {
             "id": "aranha1",
             "sequence": "TTGACCTGCAGC",
             "name": "Aranha",
-            "scientificName": "Troglohyphantes vignai",
+            "scientificName": "Troglohyphantes bornensis",
             "description": "Aranha pequena que vive em cavernas, quase sem olhos e sem cor, adaptada à escuridão.",
             "habitat": "Cavernas do norte da Itália.",
             "geneticFeatures": "Genes que ajudam na perda de pigmentação, olhos reduzidos e maior sensibilidade ao toque.",
@@ -310,19 +310,19 @@
                 "order": "Araneae",
                 "family": "Linyphiidae",
                 "genus": "Troglohyphantes",
-                "species": "T. vignai"
+                "species": "T. bornensis"
             },
             "curiosity": "Diferente de muitas aranhas, não usa teia para caçar.",
             "image": "Images/Animals/Solo/Aranha cavernícola.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/1669234"
         },
         {
             "id": "escorpiao1",
             "sequence": "TTGACCTGTAGG",
             "name": "Escorpião",
-            "scientificName": "Typhlochactas mitchelli",
-            "description": "Escorpião que vive em cavernas do México, sem olhos e de cor clara.",
-            "habitat": "Cavernas do México, especialmente em ambientes de calcário.",
+            "scientificName": "Centruroides vittatus",
+            "description": "Escorpião com veneno altamente tóxico.",
+            "habitat": "Cavernas do México e Estados Unidos.",
             "geneticFeatures": "Genes ligados à vida sem luz, sensores de vibração e toque mais desenvolvidos.",
             "physical_characteristics": [
                 "Pinças (pedipalpos)",
@@ -334,19 +334,19 @@
                 "phylum": "Arthropoda",
                 "class": "Arachnida",
                 "order": "Scorpiones",
-                "family": "Typhlochactidae",
-                "genus": "Typhlochactas",
-                "species": "T. mitchelli"
+                "family": "Buthidae",
+                "genus": "Centruroides",
+                "species": "C. vittatus"
             },
-            "curiosity": "É um dos poucos escorpiões do mundo totalmente adaptados às cavernas.",
+            "curiosity": "Em cativeiro, o tamanho da ninhada relatado para esta espécie varia de 13 a 47 filhotes.",
             "image": "Images/Animals/Solo/Escorpião cavernícola.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/328077006"
         },
         {
             "id": "anfipode1",
             "sequence": "TTGACCTGCACA",
             "name": "Anfípode",
-            "scientificName": "Stygobromus hayi",
+            "scientificName": "Stygobromus",
             "description": "Pequeno crustáceo parecido com camarão, sem olhos e sem pigmento.",
             "habitat": "Cavernas subaquáticas dos EUA (Alabama e Tennessee).",
             "geneticFeatures": "Genes ligados à perda de pigmentação e adaptação a ambientes sem luz.",
@@ -361,12 +361,12 @@
                 "class": "Malacostraca",
                 "order": "Amphipoda",
                 "family": "Crangonyctidae",
-                "genus": "Stygobromus",
-                "species": "S. hayi"
+                "genus": "Stygobromus Pizzinii",
+                "species": "S. Pizzinii"
             },
             "curiosity": "Sua presença indica água extremamente limpa e sem poluição.",
             "image": "Images/Animals/Solo/Anfípode cavernícola.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/241515292"
         },
         {
             "id": "grilo1",
@@ -392,7 +392,7 @@
             },
             "curiosity": "Cada espécie tem seu próprio canto, como se fosse uma assinatura sonora.",
             "image": "Images/Animals/Solo/Grilo-preto.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/225750936"
         }
     ],
     "ambienteCavernaFossil": [
@@ -420,7 +420,7 @@
             },
             "curiosity": "Mesmo sem olhos, navega muito bem usando sensores que percebem vibrações na água.",
             "image": "Images/Animals/Fosseis/Peixe-cego-de-caverna.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/taxa/94765-Astyanax-mexicanus"
         },
         {
             "id": "olm1",
@@ -446,7 +446,7 @@
             },
             "curiosity": "Pode ficar até 10 anos sem comer!",
             "image": "Images/Animals/Fosseis/Salamandra-cega.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/observations/204137760"
         },
         {
             "id": "archaeopteryx1",
@@ -472,7 +472,7 @@
             },
             "curiosity": "Provavelmente não voava como aves modernas, mas conseguia planar.",
             "image": "Images/Animals/Fosseis/Archaeopteryx.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/taxa/490945-Archaeopteryx-lithographica"
         },
         {
             "id": "tiranossauro1",
@@ -498,7 +498,7 @@
             },
             "curiosity": "Sua mordida era forte o suficiente para esmagar ossos.",
             "image": "Images/Animals/Fosseis/Tiranossauro rex.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/taxa/339939-Tyrannosaurus-rex"
         },
         {
             "id": "mamute1",
@@ -524,7 +524,7 @@
             },
             "curiosity": "Cientistas tentam trazer de volta uma espécie parecida usando engenharia genética.",
             "image": "Images/Animals/Fosseis/Mamute-lanoso.png",
-            "link_fonte":""
+            "link_fonte":"https://www.biodiversity4all.org/taxa/317775-Mammuthus-primigenius"
         }
     ]
 }
